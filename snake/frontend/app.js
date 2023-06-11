@@ -2,7 +2,7 @@ const bgColor = "#231f20";
 const snakeColor = "#c2c2c2";
 const foodColor = "#e66916";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://snake-multiplayer-backend.vercel.app");
 
 socket.on("init", handleInit);
 socket.on("gameState", handleGameState);
