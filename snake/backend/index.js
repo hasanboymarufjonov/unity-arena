@@ -1,8 +1,8 @@
 const express = require("express");
 const { createServer } = require("http");
 const { Server } = require("socket.io");
-const { initGame, gameLoop, getUpdatedVelocity } = require("./game");
-const { makeid } = require("./utils");
+const { initGame, gameLoop, getUpdatedVelocity } = require("./src/game");
+const { makeid } = require("./src/utils");
 const cors = require("cors");
 
 const state = {};
