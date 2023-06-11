@@ -10,57 +10,38 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      #gameScreen {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="vh-100">
       <div class="container h-100">
         <div id="initialScreen" class="h-100">
           <div
+            id="joinForm"
             class="d-flex flex-column align-items-center justify-content-center"
-            style="margin-top: 120px"
           >
             <div class="d-flex flex-column">
-              <h1 style="font-size: 40px; text-align: center">
-                Multiplayer Snake
-              </h1>
+              <h1 class="title">Multiplayer Snake</h1>
 
               <input
                 type="text"
                 placeholder="Enter Game Code"
                 id="gameCodeInput"
                 class="form-label"
-                style="
-                  width: 400px;
-                  border-radius: 5px;
-                  padding: 4px;
-                  height: 40px;
-                  margin-top: 20px;
-                "
               />
 
               <button
                 type="submit"
                 class="btn btn-success btn-lg"
                 id="joinGameButton"
-                style="width: 400px; margin-top: 20px"
               >
                 Join Game
               </button>
 
               <button
                 type="submit"
-                class="btn btn-primary btn-lg mt-4"
+                class="btn btn-primary btn-lg"
                 id="newGameButton"
-                style="width: 400px"
               >
                 Create New Game
               </button>

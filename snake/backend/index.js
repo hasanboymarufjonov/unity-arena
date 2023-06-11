@@ -28,6 +28,7 @@ const server = createServer(app);
 const io = new Server(server, {
   cors: {
     origin: "https://snake-multiplayer-game.vercel.app",
+    // origin: "http://127.0.0.1:5500",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -45,6 +46,9 @@ io.on("connection", (client) => {
     let allUsers;
     if (roomNames.includes(roomName)) {
       allUsers = roomName.sockets;
+    } else {
+      console.log(2);
+      client.emit("unknownCode");
     }
 
     let numClients = 0;

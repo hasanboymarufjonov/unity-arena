@@ -1,8 +1,10 @@
 const bgColor = "#231f20";
-const snakeColor = "#c2c2c2";
-const foodColor = "#e66916";
+const snakeColor = "#1AA7EC";
+const snakeColor2 = "#3CB043";
+const foodColor = "#FFF700";
 
 const socket = io("https://snake-multiplayer-backend.vercel.app");
+// const socket = io("http://localhost:5000");
 
 socket.on("init", handleInit);
 socket.on("gameState", handleGameState);
@@ -72,7 +74,7 @@ function paintGame(state) {
   ctx.fillRect(food.x * size, food.y * size, size, size);
 
   paintPlayer(state.players[0], size, snakeColor);
-  paintPlayer(state.players[1], size, "red");
+  paintPlayer(state.players[1], size, snakeColor2);
 }
 
 function paintPlayer(playerState, size, colour) {
