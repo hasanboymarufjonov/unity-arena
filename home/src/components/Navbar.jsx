@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const name = localStorage.getItem("name");
+
   return (
     <div>
       <nav className="bg-gradient-to-bl from-sky-400 to-sky-200">
@@ -16,12 +19,18 @@ const Navbar = () => {
             </span>
           </a>
           <div className="flex md:order-2">
-            <button
-              type="button"
-              className="text-sky-400 bg-white hover:bg-sky-500 hover:text-white font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0"
-            >
-              Sign In
-            </button>
+            {name ? (
+              // If name exists in local storage, render the button with the name
+              <p className="text-white font-medium  text-xl mr-3 ">{name}</p>
+            ) : (
+              // If name does not exist in local storage, render the default button
+              <Link to="/signin">
+                <button className="text-sky-400 bg-white hover:bg-sky-500 hover:text-white font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0">
+                  Sign In
+                </button>
+              </Link>
+            )}
+
             {/* <button
               data-collapse-toggle="navbar-cta"
               type="button"

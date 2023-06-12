@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGamepad } from "react-icons/fa";
+import collectorGame from "../assets/collector.png";
 
 const Games = () => {
   return (
@@ -14,16 +15,18 @@ const Games = () => {
               {" "}
               <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                 <img
-                  className="w-full"
-                  src="https://www.wallpaperflare.com/static/1016/450/366/world-of-warcraft-lich-king-sword-cold-wallpaper-preview.jpg"
+                  className="w-full object-cover object-center h-56"
+                  src="https://construct-static.com/uploads/91398/3eb4ea3c-8c6c-449a-88ea-f2c638250d59/r/900/scr1.jpg"
                   alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Snake</div>
+                  <div className="font-bold text-xl mb-2">
+                    Snake Multiplayer Game
+                  </div>
                   <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
+                    Classic arcade game built using HTML, CSS, and JavaScript,
+                    with server-side functionality implemented using Node.js,
+                    Express.js, and Socket.io.
                   </p>
                 </div>
 
@@ -37,7 +40,7 @@ const Games = () => {
                 </div>
 
                 <a
-                  href=""
+                  href="https://snake-multiplayer-game.vercel.app/"
                   className="text-white bg-sky-700 hover:bg-sky-400  font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center  float-right mt-2.5 mr-4"
                 >
                   <FaGamepad size={32} className="mr-2" />
@@ -48,17 +51,22 @@ const Games = () => {
             <div href="#" className="flex justify-center items-center">
               {" "}
               <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                {/* <img
+                  className="w-full object-cover object-center h-56"
+                  src="https://res.cloudinary.com/dk-hub/image/upload/v1527754326/coin-collector_s2bzsv.png"
+                  alt="Sunset in the mountains"
+                /> */}
                 <img
-                  className="w-full"
-                  src="https://www.wallpaperflare.com/static/1016/450/366/world-of-warcraft-lich-king-sword-cold-wallpaper-preview.jpg"
+                  className="w-full object-cover object-center h-56"
+                  src={collectorGame}
                   alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Snake</div>
+                  <div className="font-bold text-xl mb-2">Coin Collector</div>
                   <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
+                    Multiplayer coin collection online game built with HTML,
+                    CSS, JavaScript, and powered by Firebase to deliver an
+                    exhilarating multiplayer experience.
                   </p>
                 </div>
 
