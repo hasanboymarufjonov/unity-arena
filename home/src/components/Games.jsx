@@ -80,7 +80,7 @@ const Games = () => {
                 </div>
 
                 <a
-                  href=""
+                  href="https://coin-collector-game.vercel.app/"
                   className="text-white bg-sky-700 hover:bg-sky-400  font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center  float-right mt-2.5 mr-4"
                 >
                   <FaGamepad size={32} className="mr-2" />
