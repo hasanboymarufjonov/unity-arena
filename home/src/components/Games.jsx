@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGamepad } from "react-icons/fa";
 import collectorGame from "../assets/collector.png";
+import roomsGame from "../assets/game-of-rooms.png";
 
 const Games = () => {
   return (
@@ -92,30 +93,27 @@ const Games = () => {
               {" "}
               <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                 <img
-                  className="w-full"
-                  src="https://www.wallpaperflare.com/static/1016/450/366/world-of-warcraft-lich-king-sword-cold-wallpaper-preview.jpg"
+                  className="w-full object-cover object-center h-56"
+                  src={roomsGame}
                   alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">Snake</div>
+                  <div className="font-bold text-xl mb-2">Game of Rooms</div>
                   <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Voluptatibus quia, nulla! Maiores et perferendis eaque,
-                    exercitationem praesentium nihil.
+                    As the main character, a courageous and determined king,
+                    you'll explore a magnificent castle brought to life using
+                    JavaScript and HTML canvas.
                   </p>
                 </div>
 
                 <div className="px-6 pt-4 pb-2 float-left">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    #multiplayer
-                  </span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    #remote
+                    #singleplayer
                   </span>
                 </div>
 
                 <a
-                  href=""
+                  href="https://game-of-rooms.vercel.app"
                   className="text-white bg-sky-700 hover:bg-sky-400  font-medium rounded-lg text-sm px-2 py-1 text-center inline-flex items-center  float-right mt-2.5 mr-4"
                 >
                   <FaGamepad size={32} className="mr-2" />

@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className="text-7xl font-bold  mb-2">
           Welcome to the <span className="text-sky-300">Unity Arena</span>
         </h1>
-        <p className="text-2xl">
+        <p className="text-2xl mx-1">
           Browser based, built in{" "}
           <span className="text-yellow-300">JavaScript</span> games
         </p>
