@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Coin Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div class="game-container"></div>
+    <div class="player-info">
+      <div>
+        <label for="player-name">Your Name</label>
+        <input id="player-name" maxlength="10" type="text" />
+      </div>
+      <div>
+        <button id="player-color">Change Character</button>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBrLXTqV0gJ8zKyRi1MvBN-QUSGDpMeOAA",
+        authDomain: "coincollector-4017b.firebaseapp.com",
+        databaseURL: "https://coincollector-4017b-default-rtdb.firebaseio.com",
+        projectId: "coincollector-4017b",
+        storageBucket: "coincollector-4017b.appspot.com",
+        messagingSenderId: "157739830125",
+        appId: "1:157739830125:web:bc3db7e24f46f9363ae864",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="./eventListener.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
