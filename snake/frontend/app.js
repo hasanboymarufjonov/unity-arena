@@ -3,8 +3,10 @@ const snakeColor = "#1AA7EC";
 const snakeColor2 = "#3CB043";
 const foodColor = "#FFF700";
 
-const socket = io("https://snake-multiplayer-backend.vercel.app");
+const socket = io("https://multiplayer-snake-game-hp0s.onrender.com");
 // const socket = io("http://localhost:5000");
+// const socket = io("https://snake-multiplayer-backend.vercel.app");
+
 
 socket.on("init", handleInit);
 socket.on("gameState", handleGameState);
